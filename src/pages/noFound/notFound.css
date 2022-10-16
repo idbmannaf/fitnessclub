@@ -1,0 +1,12 @@
+.notFond_container{
+   text-align: center;
+   padding-top: 8rem;
+}
+.notFond_container .btn{
+    margin-top: 2rem;
+    display: inline-block;
+}
+
+.icon {
+    font-size: 10rem;
+}

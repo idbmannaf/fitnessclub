@@ -1,0 +1,72 @@
+.about_section_image {
+  border-radius: 50%;
+  overflow: hidden;
+  transform: skew(15deg);
+  transition: var(--transitions);
+}
+.about_section_image img {
+  width: 100%;
+  height: 100%;
+}
+.about_section_image:nth-child(2) {
+  transform: skew(-15deg);
+}
+.about_section_image:hover {
+  transform: skew(0deg);
+}
+.about_section_content h1 {
+  margin-bottom: 2rem;
+}
+.about_section_content p {
+  margin-bottom: 1rem;
+}
+
+/* about_story */
+.about_story,
+.about_Vision,
+.about_Mission {
+  padding-top: 3rem;
+}
+.about_story_container,
+.about_Vision_container {
+  display: grid;
+  grid-template-columns: 40% 50%;
+  gap: 10%;
+}
+.about_Mission_container {
+  display: grid;
+  grid-template-columns: 50% 40%;
+  gap: 10%;
+}
+
+/* MEDIA QUERIES (MEDIUM sCREENS) */
+@media screen and (max-width: 1024px) {
+  .about_section_image {
+    width: 60%;
+  }
+  .about_section_content h1 {
+    margin-bottom: 1.2rem;
+  }
+  .about_story_container,
+  .about_Vision_container,
+  .about_Mission_container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .about_Vision .about_section_image{
+    grid-row: 1;
+  }
+}
+
+/* MEDIA QUERIES (small sCREENS) */
+@media screen and (max-width: 600px) {
+    .about_section_image {
+        width: 80%;
+        margin: 0 auto;
+      }
+      .about_story_container,
+      .about_Vision_container,
+      .about_Mission_container {
+        gap: 2rem;
+      }
+}

@@ -1,0 +1,59 @@
+.trainers{
+    margin-top: 5rem;
+}
+.trainers_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+}
+.card.trainer{
+    padding: 1rem;
+}
+.trainer_img{
+    border-radius: 0 2rem;
+    overflow: hidden;
+}
+.trainer h3{
+    margin-top: 2rem;
+}
+.trainer p{
+    margin-top: 0.5rem;
+}
+.trainer_social{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+.trainer_social a{
+    font-size: 0.7rem;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-gray-600);
+    padding: 0.8rem;
+    border-radius: 0.7rem;
+    transition: var(--transitions);
+}
+.trainer:hover a{
+    background: var(--color-gray-500);
+}
+
+@media screen and (max-width: 1024px) {
+    .trainers_container{
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .trainers_container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .card.trainer{
+        margin: 0 auto;
+    }
+}
